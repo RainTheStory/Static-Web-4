@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    width: 100%
+}
+header {
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 10004;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: rgb(42, 3, 78);
+} 
+
+.navbar{
+    display: flex;
+    height: 3vh;
+    width: auto;
+}
+
+.navbar a{
+    margin-left: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.logo {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+}
+#logo{
+    display: flex;
+    margin-left: 10vw;
+}
+
+.join {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join a{
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#join {
+    position: relative;
+    display: inline-flex;
+    border-radius: 2vh;
+    background-color: red;
+    height: 8vh;
+    width: 12vw;
+    
+}
+.sign {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign a{
+    margin-left: 5vw;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#sign {
+    position: relative;
+    display: inline-flex;
+    border-radius: 2vh;
+    border-style: outset;
+    border-color: red;
+    height: 8vh;
+    width: 8vw;
+}
+
+#sign:hover {
+    background-color: rgb(110, 88, 131);
+}
+
+
+.karaoke, .music, .play, .night, .mic, .roxi {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: grid;
+    background-color: rgb(42, 3, 78);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.karaoke-text, .music-text, .night-text, .roxi-text{
+    position: absolute;
+    z-index: 4;
+    margin-left: 12vw;
+    margin-bottom: 20vh;
+    color: white;
+}
+
+.karaoke-text h1, .music h1, .play h1, .night h1, .mic h1, .roxi h1{
+   position: relative; 
+   font-size: 4.2rem;
+   font-weight: 800;
+   bottom: 10vh;
+}
+
+.karaoke-text h3, .music h3, .play h3, .night h3, .mic h3, .roxi h3{ 
+    position: relative; 
+    bottom: 8vh;
+    font-size: 1.6rem;
+}
+
+.karaoke-text a, .music a, .play a, .night a, .mic a, .roxi a{
+    position: relative; 
+    top: 33vh;
+    font-size: 1.2rem;
+    padding-top: 2.5vh;
+    color: white;
+}
+
+.karaoke-text h5, .music h5, .play h5, .night h5, .mic h5, .roxi h5{
+    position: relative; 
+    top: 25vh;
+    font-size: 0.8rem;
+}
+
+.kimg, .mimg, .nimg, .rimg {
+    position: relative;
+    margin-left: 45vw;
+}
+
+#learn, #free, #play {
+    position: absolute;
+    border-radius: 2vh;
+    background-color: red;
+    height: 8vh;
+    width: 12vw;
+    text-align: center;
+}
+
+.music {
+    height: 100vh;
+    background-color: rgb(4, 4, 52);
+}
+
+.play {
+    height: 100vh;
+    background-color: rgb(4, 4, 52);
+}
+
+
+.play-text, .mic-text {
+    position: absolute;
+    z-index: 4;
+    margin-left: 60vw;
+    margin-bottom: 20vh;
+    color: white;
+
+}
+
+.pimg, .micimg {
+    position: relative;
+    margin-left: -11vw;
+}
+
+.nimg {
+    margin-left: 30vw;
+}
+
+.night {
+    height: 83.5vh;
+    background-color: rgb(1, 1, 22);
+}
+
+.mic {
+    height: 105vh;
+    background-color: rgb(1, 1, 22);
+}
+
+.plat{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(42, 3, 78);
+    
+}
+
+.row1, .row2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.row1 img, .row2 img{
+    width: 50%;
+    
+}
+
+/*.row1 *, .row2 *{
+    padding-left: 2vw;
+    padding-top: 15vh;
+}
+*/
+.platbox {
+    width: 15%;
+    height: 10rem;
+    border-radius: 1vw;
+    background: linear-gradient(to bottom left,#21073C -.13%,#00022F 98.08%) left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+.ptext {
+    position: relative;
+    color: white;
+    font-size: 2rem;  
+    font-weight: 600;  
+}
+
+.ptext h1{
+    margin-bottom: 10vh;
+}
+
+.ptext h3 {
+    margin-bottom: 5vh;
+    font-size: 1rem;
+}
