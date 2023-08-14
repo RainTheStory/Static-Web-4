@@ -216,6 +216,9 @@ header {
     
 }
 
+.roxi{
+    background-color: rgb(1, 1, 22);
+}
 .row1, .row2 {
     width: 100%;
     display: flex;
@@ -262,10 +265,18 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 240vh;
     width: 100%;
+    align-items: center;
+    background-color: rgb(42, 3, 78);
+    padding-top: 10vh;
 }
 
+.faqmain h3{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
 .faqbox{
     position: relative;
     display: flex;
@@ -274,10 +285,9 @@ header {
     justify-content: center;
     text-align: center;
     border-radius: 5vh;
-    background-color: blue;
+    /*background-color: blue;*/
     box-sizing: border-box;
     width: 80%;
-    margin-left: 10vw;
 }
 
 .faqmaintext {
@@ -287,10 +297,11 @@ header {
     border-radius: 2vh;
     height: 8vh;
     width: 80vw;
-    background-color: red;
+    /*background-color: rgb(42, 3, 78);*/
     color: whitesmoke;
     font-weight: 200;
     font-size: 1.5rem;
+    background: linear-gradient(to bottom left,#21073C -.13%,#00022F 98.08%) left;
 }
 
 .plusminus{
@@ -317,11 +328,12 @@ header {
     border-radius: 2vh;
     height: 35vh;
     width: 80vw;
-    background-color: red;
+    /*background-color: red;*/
     color: whitesmoke;
     font-weight: 200;
     font-size: 1.3rem;
     gap: 5rem;
+    background: linear-gradient(to bottom left,#21073C -.13%,#00022F 98.08%) left;
 }
 
 .hiddentext p{
@@ -329,4 +341,16 @@ header {
     align-items: start;
     justify-content: left;
     text-align: left;
+}
+
+.hid3, .hid9 {
+    height: 12vh;
+}
+
+.hid4 {
+    height: 15vh;
+}
+
+.hid5, .hid6, .hid7, .hid8 {
+    height: 10vh;
 }
