@@ -53,7 +53,7 @@ header {
     margin-left: 10vw;
 }
 
-.join {
+.join, .navbut {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -390,4 +390,56 @@ header {
 .faend i{
     padding-right: 1vw;
     cursor: pointer;
+}
+
+#menuicon {
+    color: white;
+    display: none;
+}
+
+@media (max-width: 990px ) {
+    #menuicon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(42, 3, 78);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+        gap: 1.5rem;
+    }
+        .navbut {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 6rem;
+       }
+
+       #sign {
+        position: relative;
+        display: inline-flex;
+        border-radius: 2vh;
+        border-style: outset;
+        border-color: red;
+        height: 8vh;
+        width: 30vw;
+    }
+    
+    #join {
+        position: relative;
+        display: inline-flex;
+        border-radius: 2vh;
+        background-color: red;
+        height: 8vh;
+        width: 30vw;
+    }
+
 }
